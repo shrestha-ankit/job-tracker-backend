@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "job-tracker-backend"
+version = "0.1.0"
+description = "Backend for the Job Tracker project"
+authors = ["Ankit Shrestha <ankit.shrestha196@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.116.1"
+uvicorn = "^0.35.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-mock = "^3.14.0"
+pytest-asyncio = "^0.24.0"
+pytest-cov = "^6.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+

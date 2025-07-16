@@ -1,0 +1,79 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# --- Virtual Environments ---
+.venv/
+env/
+venv/
+
+# --- Poetry ---
+poetry.lock
+# (Keep it in version control if you're working in teams)
+
+# --- dotenv files ---
+.env
+.env.*
+
+# --- Logs ---
+*.log
+
+# --- Migrations / Alembic junk ---
+alembic/versions/
+*.sqlite3
+
+# --- Testing ---
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+.cache/
+pytest_cache/
+
+# --- VSCode ---
+.vscode/
+
+# --- IDE junk ---
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Docker ---
+**/__pycache__/
+docker-compose.override.yml
+*.pid
+
+# --- Misc ---
+*.bak
+*.swp
+*.tmp
+*.old
+*.orig
+*.egg-info/
+dist/
+build/
+
+# --- Bytecode cache ---
+**/__pycache__/
+**/*.py[cod]
+
+# --- Node junk (if you ever npm install randomly) ---
+node_modules/
+
+# --- Git ---
+.git/
+
+# --- Coverage ---
+.coverage
+coverage/
+
+# --- Wheels ---
+*.whl
